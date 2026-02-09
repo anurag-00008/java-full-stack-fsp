@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const changeh2=()=>{
+            var h2Ref=document.getElementById("hid");
+            h2Ref.innerText="DOM MANIPULATION BY JAVASCRIPT";
+        }
+        const changeP=()=>{
+            var pRef=document.getElementById("pid");
+            pRef.innerText="EVENT HANDELLING";
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">   <h2 id="hid">DOM</h2>
+    <P id="pid">WELCOME</P>
+    <button onclick="changeh2()">CHANGEH2</button>&nbsp;&nbsp;
+    <button onclick="changeP()">CHANGEP</button>&nbsp;&nbsp;
+    </div>
+</body>
+</html>
