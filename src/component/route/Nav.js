@@ -14,6 +14,7 @@ function Nav() {
     <a href="/useeffect">USEEFFECT</a>
     <a href="/crend">CONDRENT</a>
     <a href="/preport">PRODUCT REPORT</a>
+    <a href="/addproduct">ADD PRODUCT</a>
     <a href="/product">PRODUCT</a>
     </div>
     </div>
