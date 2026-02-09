@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-
+import "bootstrap/dist/css/bootstrap.css";
+import { Routes,Route } from 'react-router-dom';
+import Nav from './component/route/Nav';
+import StateDemo from './component/state/StateDemo';
+import Profile from './component/state/Profile';
+import Parent from './component/props/Parent';
+import A from './component/propsdrilling/A';
+import Parent1 from './component/contextapi/Parent1';
+import User from './component/axios/User';
+import UserInfo from './component/useeffect/UserInfo';
+import Main from './component/condrend/Main';
+import Product from './component/nestedrouting/Product';
+import Jewellery from './component/nestedrouting/Jewellery';
+import Retails from './component/nestedrouting/Retails';
+import Electronics from './component/nestedrouting/Electronics';
+import Garments from './component/nestedrouting/Garments';
+import ProductReport from './component/bootreact/ProductReport';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>REACT APP</h2>
+      <Nav/>
+      <Routes>
+        <Route path="/state" element={<StateDemo/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/props" element={<Parent/>}/>
+        <Route path="/propsdrilling" element={<A/>}/>
+        <Route path="/context" element={<Parent1/>}/>
+        <Route path="/axios" element={<User/>}/>
+        <Route path="/useeffect" element={<UserInfo/>}/>
+        <Route path="/crend" element={<Main/>}/>
+        <Route path="/preport" element={<ProductReport/>}/>
+        <Route path="/product" element={<Product/>}>
+        <Route path="electronics" element={<Electronics/>}/>
+        <Route path="garments" element={<Garments/>}/>
+        <Route path="retails" element={<Retails/>}/>
+        <Route path="jewellery" element={<Jewellery/>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }
-
 export default App;
